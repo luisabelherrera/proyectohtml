@@ -8,50 +8,81 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/diseñoinicio.css" />
+
     </head>
     <body>
-        <div  id="contenedor" class="seccion" >
+        <nav id="Barradenavegación">
+            <div  id="contenedor"  >
+
+                <div class="Menúdesplegable">
+                    <button class="dropbtn">INSTITUCION</button>
+                    <div class="Menúdesplegable-content">
+                        <a href="#">Enlace 1</a>
+                    </div>
+                </div>
+
+                <div class="Menúdesplegable">
+                    <button class="dropbtn">RECURSOS EDUCATIVOS</button>
+                    <div class="Menúdesplegable-content">
+                        <a href="#">Enlace 1</a>
+                    </div>
+                </div>
+                <div class="Menúdesplegable">
+                    <button class="dropbtn">PROYECTOS PRODUCTIVOS</button>
+                    <div class="Menúdesplegable-content">
+                        <a href="#">Enlace 1</a>
+                    </div>
+                </div>
+                <div class="Menúdesplegable">
+                    <button class="dropbtn">BIBLIOTECA</button>
+                    <div class="Menúdesplegable-content">
+                        <a href="#">Enlace 1</a>
+                    </div>
+                </div>
+
+                <div class="Menúdesplegable">
+                    <button class="dropbtn">AULA VIRTUAL</button>
+                    <div class="Menúdesplegable-content">
+                        <a href="#">Enlace 1</a>
+                    </div>
+                </div>
+                <div class="Menúdesplegable">
+                    <button class="dropbtn">CONTACTANOS</button>
+                    <div class="Menúdesplegable-content">
+                        <a href="#">Enlace 1</a>
+                    </div>
+                </div> 
+            </div>
+
+        </nav>
+        <footer id="inicio">
             <p>
-                aqui va mi login
+                aqui va mi contenido de mi inicio.
             </p>
-            <ul>
-                <li><a href="../loginyregistro/login.html" target="target">Login</a></li>
-                <li><a href="../loginyregistro/Registro.html" target="target">Registro</a></li>
-            </ul>   
-        </div>
+        </footer>
 
-        <div  id="contenedor1" class="portada" >
-            <p>
-                aqui va mi portada 
-            </p>
 
-            <ul>
-                <li><a href="url" target="target">INSTITUCION</a></li>
-                <li><a href="url" target="target">RECURSOS EDUCATIVOS</a></li>
-                <li><a href="url" target="target">PROYECTOS PRODUCTIVOS</a></li>
-                <li><a href="url" target="target">BIBLIOTECA</a></li>
-                <li><a href="url" target="target">AULA VIRTUAL</a></li>
-                <li><a href="url" target="target">CONTACTANOS</a></li>
-            </ul>   
-        </div>
-
-        <div id="contenido2">
-            <form action="action">
-                <img id="miImagen" src="../imagenes/coding-startup-pexels-978x652.jpg" width="500" height="300" alt="escuela">   
-                <img id="miImagen1" src="../imagenes/maestroprofesorinstructor.jpeg" width="500" height="300" alt="escuela">   
+        <div id="login">
+            <form>
+                <p>digite su nombre</p>
+                <input type="text" id="nombre" name="nombre" value="Digite su usuario">
+                <p>digite su contraseña</p>
+                <input type="password" id="password" name="password" value="Digite su contraseña">
+                <p></p>
+                <input type="button" id="boton" value="admin" onclick="location.href = '../admin/VentanaAdminPrincipal.html';">
+                <input type="button" id="boton1" value="alumno" onclick="location.href = '../alumno/VentanaPrincipalAlumno.html';">
+                <input type="button" id="boton3" value="Profesor" onclick="location.href = '../profesores/VentanaPrincipalProfesor.html';">
+                <input type="button" id="Registro" value="Registro" onclick="location.href = '../registro/Registro.html';">
             </form>
-
-
         </div>
 
-
-        <div  id="contenedor3" class="Desenlace" >
+        <footer id="desenlace">
             <p>
-                aqui va el desenlace
+                aqui va mi desenlace
+                Todos los derechos reservados etc.
             </p>
-
-        </div>
-
+        </footer>
 
     </body>
 </html>

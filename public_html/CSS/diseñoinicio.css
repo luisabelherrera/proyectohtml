@@ -1,0 +1,76 @@
+
+body {
+    background-color: #f9f9f9;
+   background-image: url("");
+}
+
+
+#Barradenavegación {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.Menúdesplegable .dropbtn {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.Menúdesplegable {
+  position: relative;
+  display: inline-block;
+}
+
+.Menúdesplegable-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.Menúdesplegable-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Menúdesplegable:hover .Menúdesplegable-content {
+  display: block;
+}
+
+#login {
+    position: relative; 
+    width: 100%;
+    height: 500px;
+}
+
+
+form {
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    border: 1px solid black; 
+    padding: 10px; 
+    background-color: #f9f9f9;
+}
+#desenlace {
+    background-color: #f9f9f9;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#inicio{
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
