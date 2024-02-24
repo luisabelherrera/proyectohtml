@@ -8,6 +8,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <title>Registrar Materias</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p2{
+                margin: 30px; 
+                
+            }
+           /* table{
+                margin-bottom: 40px;
+            }*/
+        </style>
     </head>
     <body>
         <ul>
@@ -16,5 +25,78 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             </ul>
         
         <p>Registrar Materias</p>
+        <table cellspacing="40">
+                
+                <h2>1. Seleccion de Clases para Añadir</h2>
+                
+                <p2>Para selecccionar clases de otro ciclo lectivo, seleccione el ciclo lectivo y pulse Cambiar. Una
+                    vez elegidas las clases, continue con el paso 2 de 3.</p2>
+              
+                <table cellspacing="">
+                    <br>
+                    <br>
+                    <p3><strong>Semestre del año|Ciclo|Universidad</strong></p3>
+                    <br>
+                    <p4>Semestre </p4>
+                    <p4>Maximo Creditos Semestre </p4>
+                    <p4>Creditos Inscritos </p4>
+                </table>
+                
+                <div  class="contenedor" style="background-color: lavender">
+                    <thead>
+                        <h4>Añadir a Carrito</h4>
+                    </thead>
+                    <tr>
+                        <p3>Introduccion N° Clase</p2>
+                        <br>
+                        <input type="text" name="añadir"  id="añadir" size="8" style="margin-left: 20px; margin-top: 20px;">
+                        <input type="button" id="boton1" value="añadir" onclick="location.href = '#';" style="margin-left: 40px;">
+                    </tr>
+                    <thead>
+                        <h4>Búsq Clases</h4>
+                    </thead>
+                    <forn>
+                        <input type="radio" name="Buscar"  id="Búsqueda Clases" value="Búsqueda Clases" style="margin-left: 20px;">
+                        <label for="Búsqueda Clases">Búsqueda Clases</label>
+                    </forn>
+                    <br>
+                    <br>
+                    <forn>
+                        <input type="radio" name="Buscar"  id="Mis Condiciones Academicas" value="Mis Condiciones Academicas" style="margin-left: 20px;">
+                        <label for="Mis Condiciones Academicas">Mis Condiciones Academicas</label>
+                    </forn>
+                    <br>
+                    <br>
+                    <forn>
+                        <input type="radio" name="Buscar"  id="Mi Planificador" value="Mi Planificador" style="margin-left: 20px;">
+                        <label for="Mi Planificador">Mi Planificador</label>
+                    </forn>
+                    <br>
+                    <br>
+                    <input type="button" id="boton" value="Buscar" onclick="location.href = '#';" style="margin-left: 40px;">
+                </div>
+
+                <thead>
+                    <table border="0">
+                        <tr>
+                            <td colspan="2">Inscrito</td>
+                            <td colspan="2">Baja</td>
+                            <td colspan="2">Lista Espera</td>
+                        </tr>
+                    </table>    
+                    <table border="1">    
+                        <tr>
+                            <th width="100px">Clase</th>
+                            <th width="100px">Descripcion</th>
+                            <th width="100px">Dias/Horas</th>
+                            <th width="100px">Aulas</th>
+                            <th width="100px">Unidades</th>
+                            <th width="100px">Estado</th>
+                            <th width="100px">Crédito Adicional</th>
+                        </tr>                        
+                    </table>    
+                </thead>
+                
+            </table>
     </body>
 </html>

@@ -8,6 +8,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <title>Mis Calificaciones</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            p2{
+                margin-right: 30px; 
+                
+            }
+            table{
+                margin-bottom: 40px;
+            }
+        </style>
     </head>
     <body>
         <ul>
@@ -16,5 +25,31 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             </ul>
         
         <p>Mis Calificaciones</p>
+        
+        <table cellspacing="40">
+            <p2><strong>Semestredel año|Universidad</strong></p2>
+            <input type="button" id="boton1" value="Cambiar Ciclo" onclick="location.href = '#';">
+            
+            <table cellspacing="">
+                <p2>Semestre </p2>
+                <p2>Maximo Creditos Semestre </p2>
+                <p2>Creditos Inscritos </p2>
+            </table>
+            
+            <thead>
+            <table border="2">
+                <input type="button" id="boton2" value="Calificaciones Oficiales" onclick="location.href = '#';">
+                <input type="button" id="boton3" value="Calificaciones Parciales" onclick="location.href = '#';">
+                
+                    <tr>
+                        <th width="100px">Clase</th>
+                        <th width="140px">Descripcion</th>
+                        <th width="110px">Unidades</th>
+                        <th width="200px">Calificación</th>
+                        <th width="50px">Calif</th>
+                    </tr> 
+            </table>                  
+            </thead>
+        </table>
     </body>
 </html>

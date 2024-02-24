@@ -8,13 +8,55 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <title>Baja De Clase</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <Style>
+            p2{
+                margin: 40px;
+            }
+            
+            p3{
+                margin: 80px;
+            }
+            table{
+                margin-top: 40px;  
+            }
+        </style>
     </head>
     <body>
-        <ul>
-            <li><a href="../VentanaPrincipalAlumno.html">volver</a></li>
+        <div>
+            <ul>
+                <li><a href="../VentanaPrincipalAlumno.html">volver</a></li>
 
             </ul>
-        
-        <p>Baja De Clase</p>
+            <input type="button" id="boton" value="Buscar" onclick="location.href = '#';">
+            <input type="button" id="boton1" value="Plan " onclick="location.href = '#';">
+            <input type="button" id="boton2" value="Inscribir" onclick="location.href = '#';">
+            <input type="button" id="boton3" value="Mis Datos Academicos" onclick="location.hsrf = '#';">
+       
+            <p>Baja De Clase</p>
+            
+            <table cellspacing="40">
+                
+                <h2>1. Clases para Bajar</h2>
+                
+                <p2>Seleccine las clases que desea caur baja y pulse Baja Clases Seleccionadas</p2>
+                <br>
+                <p3><strong>Semestredel año|Ciclo|Universidad</strong></p3>
+                <thead>
+                    <table border="2">
+                        <tr>
+                            <th width="100px">Seleccionar</th>
+                            <th width="100px">Clase</th>
+                            <th width="100px">Descripcion</th>
+                            <th width="100px">Dias/Horas</th>
+                            <th width="100px">Aulas</th>
+                            <th width="100px">Unidades</th>
+                            <th width="100px">Estado</th>
+                        </tr>  
+                    </table>    
+                </thead>
+                
+            </table>
+            <input type="button" id="boton" value="Baja Clase Seleccionada" onclick="location.href = '#';">
+        </div>    
     </body>
 </html>

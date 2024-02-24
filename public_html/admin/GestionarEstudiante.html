@@ -8,11 +8,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="CSS/gestionarestudiante.css" />
     </head>
     <body>
         <div>
             <ul>
-                <li><a href="../admin/VentanaAdminPrincipal.html" target="target">volver</a></li>
+                <li><a class="button" href="../admin/VentanaAdminPrincipal.html" >volver</a></li>
 
             </ul>
 
@@ -31,9 +33,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 </thead>
 
             </table>
-            <input type="button" id="boton" value="modificar" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-            <input type="button" id="boton1" value="Borrar " onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-            <input type="button" id="boton2" value="exportar" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+            <div>
+                <ul>
+                    <li><a class="button" href="../admin/ventanasecundariaadmin/modificar.html">modificar</a></li>
+                    <li><a class="button" href="admin/ventanasecundariaadmin/modificar.html">borrar</a></li>
+                    <li><a class="button" href="admin/ventanasecundariaadmin/modificar.html">exportar</a></li>
+
+                </ul>
+            </div>
+
         </div>
     </body>
 </html>
