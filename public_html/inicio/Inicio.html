@@ -1,99 +1,46 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
+<!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="CSS/diseñoinicio.css" />
-
+        <link rel="stylesheet" type="text/css" href="CSS/diseñoinicio.css">
     </head>
     <body>
-
-
-        <nav id="Barradenavegación">
-            <div  id="contenedor"  >
-
-                <div class="Menúdesplegable">
-                    <button class="dropbtn">INSTITUCION</button>
-                    <div class="Menúdesplegable-content">
-                        <a href="#">Enlace 1</a>
-                    </div>
-                </div>
-
-                <div class="Menúdesplegable">
-                    <button class="dropbtn">RECURSOS EDUCATIVOS</button>
-                    <div class="Menúdesplegable-content">
-                        <a href="#">Enlace 1</a>
-                    </div>
-                </div>
-                <div class="Menúdesplegable">
-                    <button class="dropbtn">PROYECTOS PRODUCTIVOS</button>
-                    <div class="Menúdesplegable-content">
-                        <a href="#">Enlace 1</a>
-                    </div>
-                </div>
-                <div class="Menúdesplegable">
-                    <button class="dropbtn">BIBLIOTECA</button>
-                    <div class="Menúdesplegable-content">
-                        <a href="#">Enlace 1</a>
-                    </div>
-                </div>
-
-                <div class="Menúdesplegable">
-                    <button class="dropbtn">AULA VIRTUAL</button>
-                    <div class="Menúdesplegable-content">
-                        <a href="#">Enlace 1</a>
-                    </div>
-                </div>
-                <div class="Menúdesplegable">
-                    <button class="dropbtn">CONTACTANOS</button>
-                    <div class="Menúdesplegable-content">
-                        <a href="#">Enlace 1</a>
-                    </div>
-                </div> 
-            </div>
-
-        </nav>
-
-        <footer id="inicio">
-            <p>
-
-            </p>
-        </footer>
-
-
-
-
-
-
-        <div id="login">
-            <form>
-                <p>digite su nombre</p>
-                <input type="text" id="nombre" name="nombre" value="Digite su usuario">
-                <p>digite su contraseña</p>
-                <input type="password" id="password" name="password" value="Digite su contraseña">
-                <p></p>
+        <header>
+            <nav>
                 <ul>
-                    <li><a class="button" href="../admin/VentanaAdminPrincipal.html">admin</a></li>
-                    <li><a class="button" href="../alumno/VentanaPrincipalAlumno.html">alumno</a></li>
-                    <li><a class="button" href="../profesores/VentanaPrincipalProfesor.html">profesor</a></li>
-                    <li><a class="button" href="registro/Registro.html">registro</a></li>
+                    <li><a href="#">INSTITUCION</a></li>
+                    <li><a href="#">RECURSOS EDUCATIVOS</a></li>
+                    <li><a href="#">PROYECTOS PRODUCTIVOS</a></li>
+                    <li><a href="#">BIBLIOTECA</a></li>
+                    <li><a href="#">AULA VIRTUAL</a></li>
+                    <li><a href="#">CONTACTANOS</a></li>
                 </ul>
-            </form>
-        </div>
-
-
-
-        <footer id="desenlace">
-            <p>
-                aqui va mi desenlace
-                Todos los derechos reservados etc.
-            </p>
+            </nav>
+        </header>
+        <main>
+            <div id="login-container">
+                <div id="login">
+                    <h2>Iniciar sesión</h2>
+                    <form>
+                        <label for="username">Nombre de usuario:</label>
+                        <input type="text" id="username" name="username" value="Digite su usuario">
+                        <br>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" value="Digite su contraseña">
+                        <br>
+                        <button type="submit">Iniciar sesión</button>
+                    </form>
+                    <p>Si aún no tienes una cuenta, puedes <a href="registro/Registro.html">registrarte aquí</a>.</p>
+                    <div id="buttons">
+                        <a href="../alumno/VentanaPrincipalAlumno.html" class="button button-primary">Alumno</a>
+                        <a href="../admin/VentanaAdminPrincipal.html" class="button">Admin</a>
+                        <a href="../profesores/VentanaPrincipalProfesor.html" class="button">Profesores</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Todos los derechos reservados. tecnologico comfenalco desarrollador yeisel , carlos , abel </p>
         </footer>
-
     </body>
 </html>

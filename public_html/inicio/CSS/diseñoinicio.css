@@ -1,117 +1,106 @@
-
 body {
-    background-color: #000000;
-    background-image: url("");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-
-#Barradenavegación {
-    background-color: #f9f9f9;
-    padding: 10px;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
 }
 
-.Menúdesplegable .dropbtn {
-    background-color: #f9f9f9;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.Menúdesplegable {
-    position: relative;
-    display: inline-block;
-}
-
-.Menúdesplegable-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-
-.Menúdesplegable-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.Menúdesplegable:hover .Menúdesplegable-content {
-    display: block;
-}
-
-#login {
-    position: fixed;
-    width: 100%;
-    height: 500px;
-}
-
-
-form {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid black;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 25px;
-   
-}
-
-
-
-#desenlace {
-    background-color: #f9f9f9;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-#inicio{
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-}
-.button {
-    display: inline-block;
-    padding: 5px 10px; /* Reducir el padding hará que el botón sea más pequeño */
-    font-size: 16px; /* Reducir el tamaño de la fuente hará que el texto del botón sea más pequeño */
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #000000;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-}
-
-.button:hover {
-    background-color: #cccccc
-}
-
-.button:active {
-    background-color: #ffffff;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-ul {
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
-li {
-    float: left;
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#login {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 20rem;
+}
+
+#login h2 {
+    margin-top: 0;
+}
+
+#login label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#login input[type="text"],
+#login input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#login button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login button[type="submit"]:hover {
+    background-color: #444;
+}
+
+#login p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+#buttons {
+    margin-top: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f4f4f4;
+}
+
+.button-primary {
+    background-color: #333;
+    color: #fff;
+}
+
+.button-primary:hover {
+    background-color: #444;
 }

@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
 <html>
-    <head>
-        <title>Notas</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <ul>
-             <li><a href="../VentanaPrincipalProfesor.html">volver</a></li>
-
-            </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=-width, initial-scale=1.0">
+    <title>Informe de Notas</title>
+    <link rel="stylesheet" type="text/css" href="../css/diseñoprofesores.css" />
+</head>
+<body> 
+    <ul>
+        <li><a href="../VentanaPrincipalProfesor.html">Volver</a></li>
+    </ul>
+    <h2>Informe de Notas</h2>
+    <form>
+        <label for="studentId">ID de estudiante:</label>
+        <input type="text" id="studentId" name="studentId"><br><br>
+        <label for="studentName">Nombre completo del estudiante:</label>
+        <input type="text" id="studentName" name="studentName"><br><br>
+        <input type="button" value="buscar"><br><br>
         
-        <p>Notas</p>
-    </body>
+    </form>
+    <table>
+        <tr>
+            <th>ID de estudiante</th>
+            <th>Asignatura</th>
+            <th>Nota Primero (1-5,0)</th>
+            <th>Nota Segundo Periodo (1-5,0)</th>
+            <th>Nota Final (1-5,0)</th>
+        </tr>
+        <tr>
+            <td id="studentIdDisplay"></td>
+            <td>Programación I</td>
+            <td><input type="number" step="0.01" min="1" max="5" id="period1Note1" name="period1Note1"></td>
+            <td><input type="number" step="0.01" min="1" max="5" id="period2Note1" name="period2Note1"></td>
+            <td><input type="number" step="0.01" min="1" max="5" id="finalNote1" name="finalNote1" readonly></td>
+        </tr>
+        <tr>
+            <td id="studentIdDisplay"></td>
+            <td>Estructuras de Datos</td>
+            <td><input type="number" step="0.01" min="1" max="5" id="period1Note2" name="period1Note2"></td>
+            <td><input type="number" step="0.01" min="1" max="5" id="period2Note2" name="period2Note2"></td>
+            <td><input type="number" step="0.01" min="1" max="5" id="finalNote2" name="finalNote2" readonly></td>
+        </tr>
+        <tr>
+            <td id="studentIdDisplay"></td>
+            <td>Algoritmos y Estructuras de Datos</td>
+            <td><input type="number" step="0.01" min="1" max="5" id="period1Note3" name="period1Note3"></td>
+            <td><input type="number" step="0.01" min="1" max="5" id="period2Note3" name="period2Note3"></td>
+            <td><input type="number" step="0.01" min="1" max="5" id="finalNote3" name="finalNote3" readonly></td>
+        </tr>
+        <!-- Agregue más asignaturas aquí -->
+    </table>
+    <p>Coloque la nota del estudiante 1 a 5,0</p>
+   
+</body>
 </html>
