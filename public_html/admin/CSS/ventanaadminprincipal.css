@@ -109,3 +109,24 @@ h1, h2 {
     height: 450px;
     margin-bottom: 20px;
 }
+
+#movimiento {
+  animation-duration: 3s;
+  animation-name: slidein;
+  background-color: #333; /* Un color más oscuro */
+  color: #fff; /* Texto en blanco para contraste */
+  font-size: 24px; /* Tamaño de letra más grande */
+  text-align: center; /* Centrar el texto */
+  font-family: Arial, sans-serif; /* Fuente más profesional */
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
