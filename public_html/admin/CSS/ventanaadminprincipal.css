@@ -113,11 +113,11 @@ h1, h2 {
 #movimiento {
   animation-duration: 3s;
   animation-name: slidein;
-  background-color: #333; /* Un color más oscuro */
-  color: #fff; /* Texto en blanco para contraste */
-  font-size: 24px; /* Tamaño de letra más grande */
-  text-align: center; /* Centrar el texto */
-  font-family: Arial, sans-serif; /* Fuente más profesional */
+  background-color: #333; 
+  color: #fff; 
+  font-size: 24px; 
+  text-align: center; 
+  font-family: Arial, sans-serif; 
 }
 
 @keyframes slidein {
