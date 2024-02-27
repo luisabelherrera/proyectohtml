@@ -46,6 +46,11 @@ aside {
     top: 0;
     left: 0;
 }
+.glyphicon.glyphicon-user {
+            position: absolute;
+            top: 11px;
+            left: 1210px;
+        }
 
 aside ul {
     list-style-type: none;
