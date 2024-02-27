@@ -77,3 +77,30 @@ footer {
     left: 0;
     width: 100%;
 }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.content-block {
+    margin-bottom: 50px;
+}
+.content-block img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.content-block iframe {
+    width: 800px;
+    height: 450px;
+    margin-bottom: 20px;
+}
