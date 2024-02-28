@@ -1,15 +1,3 @@
-function filtrarPorNombre(nombreFiltrado, ueasList) {
-  
-    const nombreFiltradoLowerCase = nombreFiltrado.toLowerCase();
-
-    const ueasFiltradas = ueasList.filter(uea =>
-        uea.nombre.toLowerCase().includes(nombreFiltradoLowerCase)
-    );
-
-    return ueasFiltradas;
-}
-
-
 function filtrarTabla() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("filtroInput");
@@ -33,19 +21,12 @@ function filtrarTabla() {
 
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 tr[i].style.display = "";
-                found = true; 
+                found = true;
             } else {
                 tr[i].style.display = "none";
             }
 
 
         }
-    }
-
-  
-    if (!found) {
-        table.style.display = 'none';
-    } else {
-        table.style.display = 'table';
     }
 }
