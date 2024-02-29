@@ -14,6 +14,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link rel="stylesheet" type="text/css" href="CSS/ventanaadminprincipal.css" />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../admin/CSS/usuariollamardatos.css" />
 
     </head>
     <body>
@@ -25,7 +26,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             <ul>
 
 
-                                <li><a class="fa fa-home"  href="../inicio/Inicio.html">VOLVER</a></li>
+                                <li><a class="fa fa-home"  href="../index.html">VOLVER</a></li>
                                 <li><a href="../admin/VentanaAdminPrincipal.html">HOME</a></li>
                                 <li><a href="../admin/GestionarEstudiante.html">GESTION ESTUDIANTE</a></li>
                                 <li><a href="../admin/RegistrarAsignatura.html">REGISTRAR ASIGNATURA</a></li>
@@ -41,7 +42,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 </nav>
             </header>
             <br>
+            <span class="text1">GESTION DE ESTUDIANTES</span>
             <br>
+
 
             <label for="filtroInput">Buscar por:</label>
             <select id="filtroSelect">
@@ -61,6 +64,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <th>usuario</th>
                         <th>contraseña</th>
                         <th>correo</th>
+                        <th>Datos</th>
 
                     </tr>
                 </thead>
@@ -71,7 +75,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <td>Otto</td>
                         <td>@mdo</td>
                         <td>@mdo</td>
+                        <td>
 
+                            <button class="mostrarDetallesBtn" data-clave="#{uea.clave}" data-nombre="#{uea.nombre}" data-trimestre="#{uea.trimestre}" data-requisito="#{uea.requisito}"  data-dias="#{uea.dias}" data-lugar="#{uea.lugar}" data-hora="#{uea.hora}">Mostrar Detalles</button>
+                            <div id="detalle_#{uea.clave}" style="display: none;"> 
+                                <p>Trimestre: #{uea.trimestre}</p>
+                            </div>
+                        </td>
 
 
                     </tr>
@@ -81,7 +91,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <td>@fat</td>
                         <td>@fat</td>
                         <td>@fat</td>
+                        <td>
 
+                            <button class="mostrarDetallesBtn" data-clave="#{uea.clave}" data-nombre="#{uea.nombre}" data-trimestre="#{uea.trimestre}" data-requisito="#{uea.requisito}"  data-dias="#{uea.dias}" data-lugar="#{uea.lugar}" data-hora="#{uea.hora}">Mostrar Detalles</button>
+                            <div id="detalle_#{uea.clave}" style="display: none;"> 
+                                <p>Trimestre: #{uea.trimestre}</p>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
@@ -89,8 +105,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                         <td>@twitter</td>
                         <td>@twitter</td>
                         <td>@twitter</td>
-
-
+                        <td>
+                            <button class="mostrarDetallesBtn" data-clave="#{uea.clave}" data-nombre="#{uea.nombre}" data-trimestre="#{uea.trimestre}" data-requisito="#{uea.requisito}"  data-dias="#{uea.dias}" data-lugar="#{uea.lugar}" data-hora="#{uea.hora}">Mostrar Detalles</button>
+                            <div id="detalle_#{uea.clave}" style="display: none;"> 
+                                <p>Trimestre: #{uea.trimestre}</p>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
 
