@@ -16,36 +16,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../admin/CSS/usuariollamardatos.css" />
-
+       <script src="js/barra.js"></script>
     </head>
     <body>
-        <div>
-            <header>
-                <nav>
-                    <ul style="display: flex; justify-content: space-between;">
-                        <li>
-                            <ul>
-
-
-                                <li><a class="fa fa-home"  href="../index.html">VOLVER</a></li>
-                                <li><a href="../admin/VentanaAdminPrincipal.html">HOME</a></li>
-                                <li><a href="../admin/GestionarEstudiante.html">GESTION ESTUDIANTE</a></li>
-                                <li><a href="../admin/RegistrarAsignatura.html">REGISTRAR ASIGNATURA</a></li>
-                                <li><a href="../admin/GestionarRoles.html">GESTIONAR ROLES</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul>
-                                <li class="fa fa-male"> @USUARIO</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <br>
-
-           
+        
+        <div id="sideNavigation" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">VOLVER</a>
+            <a href="../admin/VentanaAdminPrincipal.html">HOME</a>
+            <a href="../admin/GestionarEstudiante.html">GESTIONAR ESTUDIANTE</a>
+            <a href="../admin/GestionarRoles.html">GESTIONAR ROLES</a>
+            <a href="../admin/RegistrarAsignatura.html">GESTIONAR ASIGNATURA</a>
         </div>
+        <nav class="topnav">
+            <a href="#" onclick="openNav()">
+                <svg width="30" height="30" id="icoOpen">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                </svg>
+            </a>
+        </nav>
+        
+        <div id="main">
+            
+     
+           
+      
         <span class="text1">REGISTRO DE ASIGNATURAS</span>
         <span class="text2"></span>
         <br>
@@ -166,6 +163,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entegrable 
                 integrantes luis abel herrera arrieta , carlos jose diaz castro , jhon jairo gambin salas , YELSERP BARRIOS GOMEZ</p>
         </footer>
-
+  </div>
     </body>
 </html>

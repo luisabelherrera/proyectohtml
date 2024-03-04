@@ -1,5 +1,7 @@
 function filtrarTabla() {
     var input, filter, table, tr, td, i, txtValue;
+
+
     input = document.getElementById("filtroInput");
     filter = input.value.toUpperCase();
     table = document.getElementById("tablaUEA");
