@@ -103,7 +103,7 @@ body {
 a svg{
     transition:all .5s ease;
     &:hover{
-        #transform:rotate(180deg);
+        #transform: rotate(180deg);
     }
 }
 
@@ -116,8 +116,8 @@ a svg{
     display: none;
     padding: 5px;
     width: 320px;
-    @include border-radius(5px);
-    #transition: all 0.5s ease;
+    @include  border-radius(5px);
+    #transition:  all 0.5s ease;
     a{
         display: block;
         color: #fff;

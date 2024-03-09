@@ -11,7 +11,14 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/barra.js"></script>
-        
+
+        <link rel="stylesheet" href="js/main.js"/>
+        <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+
     </head>
 
 
@@ -39,7 +46,7 @@
                     <p>
                         INGRESE ALGUNSO DE NUESTRO APARTADOS
                     </p>
-                    <img src="../imagenes/coding-startup-pexels-978x652.jpg" alt="Random Image">
+                   
                     <p>
                     </p>
                 </div>
@@ -57,9 +64,45 @@
             <script src="script.js"></script>
         </main>
 
+        <div class="video-container">
+            <div class="text"> 
+                <p>Nos localizamos .</p>
+            </div>
+            <div class="wrapper">
+                <div class="whitespace"></div>
+                <section id="mapa" class="mapa">
+                    <div style="width: 100%; height:50vh; float: left;" id="mapContainer"></div>
+
+                    <div class="map-text">
+                        <h2 style="color: #000000;">UBICACION</h2>
+                        <p style="color: #000000;">ESTAMOS UBICADOS EN CARTAGENA DE INDIA/ COLOMBIA.</p>
+                    </div>
+
+
+                    <div class="content-above-map">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+
+
         <footer>
             <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entegrable 
                 integrantes luis abel herrera arrieta , carlos jose diaz castro , jhon jairo gambin salas , YELSERP BARRIOS GOMEZ</p>
         </footer>
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src='js/main.js'></script>
 </html>
