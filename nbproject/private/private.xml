@@ -5,7 +5,13 @@
         <group>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/registro/Registro.html</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/registro/CSS/diseñoRegistro.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/CSS/ventanaadminprincipal.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/RegistrarAsignatura.html</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/index.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/js/barra.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/GestionarRoles.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/GestionarEstudiante.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/VentanaAdminPrincipal.html</file>
         </group>
     </open-files>
 </project-private>
