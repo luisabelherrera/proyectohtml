@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Dashboard">
+        <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+        <link rel="stylesheet" type="text/css" href="CSS/gestionarestudiante.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/ventanaadminprincipal.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="../admin/CSS/usuariollamardatos.css" />
+        <script src="js/barra.js"></script>
+        <link rel="stylesheet" href="CSS/bootstrap.css">
+        <link rel="stylesheet" href="CSS/forms.css">
+        <script src="js/filtrado.js"></script> 
+
+        <title>VENTANA ADMINISTRADOR PRINCIPAL</title>
+    </head>
+
+    <body>
+        <section id="container" >
+            <header class="header black-bg">
+                <div class="sidebar-toggle-box">
+                </div>      
+                <a href="ventanaprincipalAdmin.html" >
+
+                    <br>
+                    <b >VENTANA: ADMINISTRADOR</b>
+                    <b class="visible-xs TextWhite">ADV.TIME</b>
+                </a>
+                <div class="top-menu text-center">
+
+
+                </div>
+            </header>
+            <aside>
+                <div id="sidebar"  class="nav-collapse"><!-- ........Caja.Que.Contiene.Todo.El.Menu.Izq........... -->
+                    <ul class="sidebar-menu nav">
+                        <li>
+                            <p class="text-center">
+                                <a>
+                                    <img src="../imagenes/R.jpeg" class="img-circle" width="60">
+                                </a>
+                            </p>
+                            <h5 class="text-center TextWhite">ADMINISTRADOR</h5>
+                        </li>
+
+                        <li class="sub-menu">
+                            <a href="ventanaprincipalAdmin.html">
+                                <i class="fa fa-dashboard TextWhite"></i>
+                                <span class="TextWhite">PANEL PRINCIPAL</span>
+                            </a>
+                            <ul>
+                                <li><a href="TablaAlumno.html">Alumno</a></li>
+                                <li><a href="TablaProfesor.html">PROFESORES</a></li>
+                                <li><a href="AdministradorRoles.html">ADMINISTRATIVO ROLES</a></li>
+                            </ul>
+                        </li>
+
+
+
+
+                        <li class="sub-menu">
+                            <a href="TablaMatricula.html" >
+                                <i class="fa fa-desktop TextWhite"></i>
+                                <span class="TextWhite">Matricular</span>
+                            </a>
+                        </li>
+                        <li class="sub-menu">
+                            <a  href="TablaNotas.html" >
+                                <i class="fa fa-desktop TextWhite"></i>
+                                <span class="TextWhite">Notas</span>
+                            </a>
+                        </li>            
+                        <li class="sub-menu">
+                            <a  class="active" href="TablaCurso.html" >
+                                <i class="fa fa-cogs TextWhite"></i>
+                                <span class="TextWhite">Curso</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sub-menu">
+                            <a href="../index.html" >
+                                <i ></i>
+
+                                <span class="TextWhite">VOLVER</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </aside>
+
+            <section id="main-content">
+
+
+                <div id="main">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                 
+                        <span class="text1">GESTIONAR ALUMNOS</span>
+                        <span class="text2"></span>
+                        <br>
+                        <div id="cuadroDetalles" class="detalle-container">
+                            <div id="detallesTexto" class="detalle-info"></div>
+                        </div>
+
+                        <label for="filtroInput">Buscar por:</label>
+                        <select id="filtroSelect">
+                            <option value="clave">Clave</option>
+                        </select>
+                        <input type="text" id="filtroInput" onkeyup="filtrarTabla()" />
+                        <br>
+                        <br>
+                        <table id="tablaAlumnos" class="table table-bordered border-primary">
+                            <thead>
+                                <tr class="table-dark">
+                                    <th>ID Alumno</th>
+                                    <th>Nombre</th>
+                                    <th>Apellido</th>
+                                    <th>Grado</th>
+                                    <th>Sección</th>
+                                    <th>Fecha de inscripción</th>
+                                    <th>Materia</th>
+                                    <th>Nivel</th>
+                                    <th>Otros Atributos...</th>
+                                    <th>Mostrar Detalles</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Filas para Alumnos -->
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Luis</td>
+                                    <td>Herrera</td>
+                                    <td>10</td>
+                                    <td>A</td>
+                                    <td>2024-01-01</td>
+                                    <td>Matemáticas</td>
+                                    <td>1</td>
+                                    <td>Otros atributos...</td>
+                                    <td>
+                                        <button class="mostrarDetallesBtn" data-id-alumno="#1" data-nombre="Luis" data-apellido="Herrera" data-grado="10" data-seccion="A" data-fecha="2024-01-01" data-materia="Matemáticas" data-nivel="1">Mostrar Detalles</button>
+                                        <div id="detalle_alumno_1" style="display: none;"> 
+                                            <p>Otros detalles...</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Segunda Fila con Segundo Campo -->
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Carlos</td>
+                                    <td>Díaz</td>
+                                    <td>11</td>
+                                    <td>B</td>
+                                    <td>2024-01-02</td>
+                                    <td>Historia</td>
+                                    <td>2</td>
+                                    <td>Otros atributos...</td>
+                                    <td>
+                                        <button class="mostrarDetallesBtn" data-id-alumno="#2" data-nombre="Carlos" data-apellido="Díaz" data-grado="11" data-seccion="B" data-fecha="2024-01-02" data-materia="Historia" data-nivel="2">Mostrar Detalles</button>
+                                        <div id="detalle_alumno_2" style="display: none;"> 
+                                            <p>Otros detalles...</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- Puedes agregar más filas según sea necesario -->
+                            </tbody>
+                        </table>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <input type="button" id="boton" value="REGISTRAR ALUMNO" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                        <input type="button" id="boton1" value="Borrar Alumno" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                        <input type="button" id="boton2" value="Modificar Alumno" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                        <input type="button" id="boton4" value="Descargar Excel" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+
+                        <footer>
+                            <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entregable 
+                                integrantes Luis Abel Herrera Arrieta, Carlos José Díaz Castro, Jhon Jairo Gambín Salas, Yelserp Barrios Gómez</p>
+                        </footer>
+                    </div>
+
+
+                    <section class="wrapper">
+
+
+                    </section>
+            </section>
+        </section>
+
+    </body>
+</html>

@@ -16,11 +16,7 @@
         <link rel="stylesheet" href="CSS/forms.css">
         <script src="js/filtrado.js"></script> 
 
-
         <title>VENTANA ADMINISTRADOR PRINCIPAL</title>
-
-
-
     </head>
 
     <body>
@@ -99,93 +95,74 @@
             </aside>
 
             <section id="main-content">
-                <br>
-                <br> 
-                <br>
-
 
                 <div id="main">
                     <br>
-                    <span class="text1">GESTION DE ROLES</span>
                     <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="text1">GESTIONAR CURSOS</span>
+                    <span class="text2"></span>
+                    <br>
+                    <div id="cuadroDetalles" class="detalle-container">
+                        <div id="detallesTexto" class="detalle-info"></div>
+                    </div>
 
                     <label for="filtroInput">Buscar por:</label>
                     <select id="filtroSelect">
-                        <option value="nombre">Nombre</option>
-                        <option value="CC">CC</option>
+                        <option value="clave">Clave</option>
                     </select>
                     <input type="text" id="filtroInput" onkeyup="filtrarTabla()" />
-                    <br> 
                     <br>
-                    <table id="tablaUEA"  class="table table-bordered border-primary">
+                    <br>
+                    <table id="tablaCursos" class="table table-bordered border-primary">
                         <thead>
                             <tr class="table-dark">
-
-                                <th>id</th>
-                                <th>CC</th>
-                                <th>Nombre</th>
-                                <th>Cargo</th>
-                                <th>usuario</th>
-                                <th>contraseña</th>
-                                <th>rol</th>
-                                <th>correo</th>
+                                <th>ID Curso</th>
+                                <th>Nombre del Curso</th>
+                                <th>Nivel del Curso</th>
+                                <th>Aula Virtual</th>
+                                <th>Otros Atributos...</th>
+                                <th>Mostrar Detalles</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Filas para Cursos -->
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-
-
+                                <td>Matemáticas</td>
+                                <td>Secundaria</td>
+                                <td>Aula 101</td>
+                                <td>Otros atributos...</td>
+                                <td>
+                                    <button class="mostrarDetallesBtn" data-id-curso="#1" data-nombre-curso="Matemáticas" data-nivel-curso="Secundaria" data-aula-virtual="Aula 101">Mostrar Detalles</button>
+                                    <div id="detalle_curso_1" style="display: none;"> 
+                                        <p>Otros detalles...</p>
+                                    </div>
+                                </td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-
-                            </tr>
+                            <!-- Puedes agregar más filas según sea necesario -->
                         </tbody>
                     </table>
-
                     <br>
                     <br>
                     <br>
                     <br>
-                    <br>
-                    <br>
-
-                    <input type="button" id="boton" value="modificar" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-                    <input type="button" id="boton1" value="borrar" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-                    <input type="button" id="boton2" value="agregar" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-
-
+                    <input type="button" id="boton" value="REGISTRAR CURSO" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton1" value="Borrar Curso" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton2" value="Modificar Curso" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton4" value="Descargar Excel" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
 
                     <footer>
-                        <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entegrable 
-                            integrantes luis abel herrera arrieta , carlos jose diaz castro , jhon jairo gambin salas , YELSERP BARRIOS GOMEZ</p>
+                        <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entregable 
+                            integrantes Luis Abel Herrera Arrieta, Carlos José Díaz Castro, Jhon Jairo Gambín Salas, Yelserp Barrios Gómez</p>
                     </footer>
                 </div>
+
+
+
 
                 <section class="wrapper">
 

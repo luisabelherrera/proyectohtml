@@ -2,6 +2,21 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/CSS/ventanaadminprincipal.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/index.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaCurso.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaMatricula.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/ventanaprincipalAdmin.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaProfesor.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/ventanasecundariaprofesores/Calificaciones.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/AdministradorRoles.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/Inicio.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/VentanaPrincipalAlumno.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/ventanasecundariaprofesores/Horario.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/principalprofesores.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaAlumno.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaNotas.html</file>
+        </group>
     </open-files>
 </project-private>

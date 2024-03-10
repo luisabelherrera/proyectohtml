@@ -16,11 +16,7 @@
         <link rel="stylesheet" href="CSS/forms.css">
         <script src="js/filtrado.js"></script> 
 
-
         <title>VENTANA ADMINISTRADOR PRINCIPAL</title>
-
-
-
     </head>
 
     <body>
@@ -99,93 +95,90 @@
             </aside>
 
             <section id="main-content">
-                <br>
-                <br> 
-                <br>
-
 
                 <div id="main">
                     <br>
-                    <span class="text1">GESTION DE ROLES</span>
                     <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="text1">GESTIONAR NOTAS</span>
+                    <span class="text2"></span>
+                    <br>
+                    <div id="cuadroDetalles" class="detalle-container">
+                        <div id="detallesTexto" class="detalle-info"></div>
+                    </div>
 
                     <label for="filtroInput">Buscar por:</label>
                     <select id="filtroSelect">
-                        <option value="nombre">Nombre</option>
-                        <option value="CC">CC</option>
+                        <option value="clave">Clave</option>
                     </select>
                     <input type="text" id="filtroInput" onkeyup="filtrarTabla()" />
-                    <br> 
                     <br>
-                    <table id="tablaUEA"  class="table table-bordered border-primary">
+                    <br>
+                    <table id="tablaNotas" class="table table-bordered border-primary">
                         <thead>
                             <tr class="table-dark">
-
-                                <th>id</th>
-                                <th>CC</th>
-                                <th>Nombre</th>
-                                <th>Cargo</th>
-                                <th>usuario</th>
-                                <th>contraseña</th>
-                                <th>rol</th>
-                                <th>correo</th>
+                                <th>ID Nota</th>
+                                <th>ID Alumno</th>
+                                <th>ID Curso</th>
+                                <th>Calificación</th>
+                                <th>Fecha de calificación</th>
+                                <th>Otros Atributos...</th>
+                                <th>Mostrar Detalles</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Filas para Notas -->
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-
-
+                                <td>1001</td>
+                                <td>101</td>
+                                <td>90</td>
+                                <td>2024-03-01</td>
+                                <td>Otros atributos...</td>
+                                <td>
+                                    <button class="mostrarDetallesBtn" data-id-nota="#1" data-id-alumno="1001" data-id-curso="101" data-calificacion="90" data-fecha-calificacion="2024-03-01">Mostrar Detalles</button>
+                                    <div id="detalle_nota_1" style="display: none;"> 
+                                        <p>Otros detalles...</p>
+                                    </div>
+                                </td>
                             </tr>
+                            <!-- Segunda Fila con Segunda Nota -->
                             <tr>
                                 <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
+                                <td>1002</td>
+                                <td>102</td>
+                                <td>85</td>
+                                <td>2024-03-02</td>
+                                <td>Otros atributos...</td>
+                                <td>
+                                    <button class="mostrarDetallesBtn" data-id-nota="#2" data-id-alumno="1002" data-id-curso="102" data-calificacion="85" data-fecha-calificacion="2024-03-02">Mostrar Detalles</button>
+                                    <div id="detalle_nota_2" style="display: none;"> 
+                                        <p>Otros detalles...</p>
+                                    </div>
+                                </td>
                             </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-
-                            </tr>
+                            <!-- Puedes agregar más filas según sea necesario -->
                         </tbody>
                     </table>
-
                     <br>
                     <br>
                     <br>
                     <br>
-                    <br>
-                    <br>
-
-                    <input type="button" id="boton" value="modificar" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-                    <input type="button" id="boton1" value="borrar" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-                    <input type="button" id="boton2" value="agregar" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-
-
+                    <input type="button" id="boton" value="REGISTRAR NOTA" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton1" value="Borrar Nota" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton2" value="Modificar Nota" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton4" value="Descargar Excel" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
 
                     <footer>
-                        <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entegrable 
-                            integrantes luis abel herrera arrieta , carlos jose diaz castro , jhon jairo gambin salas , YELSERP BARRIOS GOMEZ</p>
+                        <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entregable 
+                            integrantes Luis Abel Herrera Arrieta, Carlos José Díaz Castro, Jhon Jairo Gambín Salas, Yelserp Barrios Gómez</p>
                     </footer>
                 </div>
+
+
+
 
                 <section class="wrapper">
 
