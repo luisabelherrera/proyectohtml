@@ -21,86 +21,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link rel="stylesheet" href="../../admin/CSS/bootstrap.css">
         <link rel="stylesheet" href="../../admin/CSS/forms.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+        <script src="../js/calificaciones.js"></script>
+        <link rel="stylesheet" href="../css/calificaciones.css"/>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <script>
-            function guardarNotas() {
-                // Obtener las notas ingresadas por el profesor
-                var period1Note1 = parseFloat(document.getElementById("period1Note1").value);
-                var period2Note1 = parseFloat(document.getElementById("period2Note1").value);
-                // Repite este proceso para todas las asignaturas y periodos
-
-                // Calcular la nota final para cada asignatura
-                var finalNote1 = (period1Note1 + period2Note1) / 2;
-                // Repite este proceso para todas las asignaturas
-
-                // Mostrar las notas finales en los campos readonly
-                document.getElementById("finalNote1").value = finalNote1.toFixed(2);
-                // Repite este proceso para todas las asignaturas
-
-                // Aquí puedes agregar la lógica para guardar las notas en tu sistema
-                alert("Notas guardadas correctamente");
-            }
-        </script>
-        <style>
-            .container {
-                font-family: Arial, sans-serif;
-                margin: 0 auto;
-                padding: 10px; /* Ajusta este valor a tus necesidades */
-                max-width: 1100px; /* Ajusta este valor a tus necesidades */
-                background-color: #fff;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            }
-
-            form {
-                margin-bottom: 20px;
-            }
-
-            label {
-                display: block;
-                margin-bottom: 5px;
-            }
-
-            input[type="text"], input[type="number"] {
-                width: 100%;
-                padding: 10px;
-                margin-bottom: 10px;
-            }
-
-            input[type="button"] {
-                padding: 10px 20px;
-                background-color: #4CAF50;
-                color: white;
-                border: none;
-                cursor: pointer;
-            }
-
-            table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-
-            table, th, td {
-                border: 1px solid black;
-                padding: 15px;
-                text-align: left;
-            }
-
-            table tr:nth-child(even) {
-                background-color: #eee;
-            }
-
-            table tr:nth-child(odd) {
-                background-color: #fff;
-            }
-
-            table th {
-                color: white;
-                background-color: black;
-            }
-        </style>
 
 
     </head>
@@ -112,16 +37,46 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <a href="ventanaprincipalAdmin.html" >
 
                     <br>
-                    <b >VENTANA: PROFESOR</b>
+                    <b >VENTANA: PROFESOR</b>   
                     <b class="visible-xs TextWhite"></b>
                 </a>
                 <div class="top-menu text-center">
-
-
+                    <button onclick="mostrarNotificaciones()">Notificaciones</button>
+                    <div id="notificacionesPopup">
+                        <span id="cerrarNotificaciones" onclick="cerrarNotificaciones()">x</span>
+                        <h2>Notificaciones de Estudiantes</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID del Estudiante</th>
+                                    <th>Número de Identificación (CC)</th>
+                                    <th>Mensaje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              
+                                <tr>
+                                    <td>001</td>
+                                    <td>123456789</td>
+                                    <td>Mensaje de notificación 1</td>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>987654321</td>
+                                    <td>Mensaje de notificación 2</td>
+                                </tr>
+                                <tr>
+                                    <td>003</td>
+                                    <td>567890123</td>
+                                    <td>Mensaje de notificación 3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </header>
             <aside>
-                <div id="sidebar"  class="nav-collapse"><!-- ........Caja.Que.Contiene.Todo.El.Menu.Izq........... -->
+                <div id="sidebar"  class="nav-collapse">
                     <ul class="sidebar-menu nav">
                         <li>
                             <p class="text-center">
@@ -154,10 +109,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                                 <span class="TextWhite">Calificaciones</span>
                             </a>
                         </li>            
+                        <li class="sub-menu">
+                            <a  href="../../profesores/ventanasecundariaprofesores/RecursoEducativos.html" >
+                                <i class="fa fa-desktop TextWhite"></i>
+                                <span class="TextWhite">RecursoEducativos</span>
+                            </a>
+                        </li>      
 
 
                         <li class="sub-menu">
-                            <a href="../index.html" >
+                            <a href="../../index.html" >
                                 <i class="fa fa-desktop TextWhite"></i>
 
                                 <span class="TextWhite">VOLVER</span>
@@ -219,7 +180,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                             <td><input type="number" step="0.01" min="1" max="5" id="finalNote2" name="finalNote2" readonly></td>
                             <td><input type="text" id="observations2" name="observations2"></td>
                         </tr>
-                        <!-- Puedes agregar más filas según sea necesario -->
+
                     </table>
 
                     <p>Coloque la nota del estudiante de 1 a 5,0</p>
@@ -227,27 +188,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <button onclick="guardarNotas()">Guardar</button>
                 </div>
 
-                <script>
-                    function calcularNotaFinal(row) {
-                        var period1Note = parseFloat(document.getElementById("period1Note" + row).value);
-                        var period2Note = parseFloat(document.getElementById("period2Note" + row).value);
-                        var finalNote = (period1Note + period2Note) / 2;
-                        document.getElementById("finalNote" + row).value = finalNote.toFixed(2);
-
-                        // Puedes agregar lógica para observaciones según la nota final
-                        var observations = document.getElementById("observations" + row);
-                        if (finalNote >= 3.0) {
-                            observations.value = "Aprobado";
-                        } else {
-                            observations.value = "Reprobado";
-                        }
-                    }
-
-                    function guardarNotas() {
-                        // Agrega aquí la lógica para guardar las notas en la base de datos o realizar alguna acción.
-                        alert("Notas guardadas exitosamente");
-                    }
-                </script>
 
                 <section class="wrapper">
 
@@ -256,5 +196,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 </section>
             </section>
         </section>
+
     </body>
 </html>

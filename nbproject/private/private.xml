@@ -3,19 +3,51 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/CSS/usuariollamardatos.css</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/CSS/ventanaadminprincipal.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/registro/CSS/diseñoRegistro.css</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/index.html</file>
-            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaCurso.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/js/filtrado.js</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaMatricula.html</file>
-            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/ventanaprincipalAdmin.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/CSS/Horario.css</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaProfesor.html</file>
-            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/ventanasecundariaprofesores/Calificaciones.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/css/diseñoprofesores.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/JS/Miscalificacion.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/CSS/Modificar.css</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/AdministradorRoles.html</file>
-            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/Inicio.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/js/bootstrap.min.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/CSS/forms.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/CSS/gestionarestudiante.css</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/VentanaPrincipalAlumno.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/ventanaSecundariaAlumno/Pemsun.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/css/RecursoEducativos.css</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/ventanasecundariaprofesores/Horario.html</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/principalprofesores.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/js/jquery.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/ventanaSecundariaAlumno/RecursoEducativos.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/js/RecursoEducativos.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/registro/Registro.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/ventanaSecundariaAlumno/Miscalificacion.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/CSS/Miscalificacion.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaCurso.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/ventanasecundariaadmin/modificar.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/CSS/bootstrap.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/ventanaprincipalAdmin.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/css/horario.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/css/calificaciones.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/js/main.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/ventanasecundariaprofesores/Calificaciones.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/Inicio.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/js/calificaciones.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/ventanaSecundariaAlumno/Horario.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/js/common-scripts.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/CSS/cambio%20de%20color.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/profesores/ventanasecundariaprofesores/RecursoEducativos.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/CSS/RecursoEducativos.css</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/js/barra.js</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/alumno/CSS/Pemsun.css</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaAlumno.html</file>
+            <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/inicio/CSS/diseñoinicio.css</file>
             <file>file:/C:/Users/abel/Documents/NetBeansProjects/proyectohtml/public_html/admin/TablaNotas.html</file>
         </group>
     </open-files>

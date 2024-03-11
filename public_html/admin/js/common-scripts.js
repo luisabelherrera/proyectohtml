@@ -1,4 +1,3 @@
-// sidebar toggle
 
 $(function() {
     function responsiveView() {

@@ -36,7 +36,7 @@
                 </div>
             </header>
             <aside>
-                <div id="sidebar"  class="nav-collapse"><!-- ........Caja.Que.Contiene.Todo.El.Menu.Izq........... -->
+                <div id="sidebar"  class="nav-collapse">
                     <ul class="sidebar-menu nav">
                         <li>
                             <p class="text-center">
@@ -122,6 +122,7 @@
                             <tr class="table-dark">
                                 <th>ID Curso</th>
                                 <th>Nombre del Curso</th>
+                                <th>Grado</th>
                                 <th>Nivel del Curso</th>
                                 <th>Aula Virtual</th>
                                 <th>Otros Atributos...</th>
@@ -133,24 +134,25 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>Matemáticas</td>
+                                <td>Primero</td>
                                 <td>Secundaria</td>
                                 <td>Aula 101</td>
                                 <td>Otros atributos...</td>
                                 <td>
-                                    <button class="mostrarDetallesBtn" data-id-curso="#1" data-nombre-curso="Matemáticas" data-nivel-curso="Secundaria" data-aula-virtual="Aula 101">Mostrar Detalles</button>
+                                    <button class="mostrarDetallesBtn" data-id-curso="#1" data-nombre-curso="Matemáticas" data-grado-curso="Primero" data-nivel-curso="Secundaria" data-aula-virtual="Aula 101">Mostrar Detalles</button>
                                     <div id="detalle_curso_1" style="display: none;"> 
                                         <p>Otros detalles...</p>
                                     </div>
                                 </td>
                             </tr>
-                            <!-- Puedes agregar más filas según sea necesario -->
+                          
                         </tbody>
                     </table>
                     <br>
                     <br>
                     <br>
                     <br>
-                    <input type="button" id="boton" value="REGISTRAR CURSO" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton" value="Registrar Curso" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
                     <input type="button" id="boton1" value="Borrar Curso" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
                     <input type="button" id="boton2" value="Modificar Curso" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
                     <input type="button" id="boton4" value="Descargar Excel" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">

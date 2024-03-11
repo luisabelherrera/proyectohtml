@@ -1,7 +1,6 @@
 body {
   font-family: Helvetica, Arial;
   margin: 0;
-  /* Transition para el cambio de color */
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -ms-transition: 1s;

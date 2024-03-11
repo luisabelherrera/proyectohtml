@@ -7,7 +7,7 @@ section.wrapper {
 .container {
 	width: 100% !important;
 }
-/*...................Inicio.De.Menu...................*/
+
 .Morado2 {
 	background-color: #6A0888;
 
@@ -43,7 +43,7 @@ section.wrapper {
 	border-radius: 7px;
 	width: 100%;
 }
-/*.........................Menu lateral Izquierda*/
+
 .black-bg {
     border: 1px solid #610B5E;
     background-color: #0B1B2E;
@@ -91,7 +91,7 @@ li.sub-menu {
 .TextWhite {
 	color: white;
 }
-/*---------------------------------*/
+
 .mt {
 	width: 100%;
 	margin: 0px;

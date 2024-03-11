@@ -17,13 +17,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link rel="stylesheet" href="../../admin/CSS/bootstrap.css">
         <link rel="stylesheet" href="../../admin/CSS/forms.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-              crossorigin="anonymous">
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/horario.css"/>
+        <link rel="stylesheet" href="../CSS/Pemsun.css"/>
     </head>
     <body>
         <section id="container" >
@@ -33,7 +30,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                 <a href="ventanaprincipalAdmin.html" >
 
                     <br>
-                    <b >VENTANA: PROFESOR</b>
+                    <b >VENTANA: Estudiante</b>
                     <b class="visible-xs TextWhite"></b>
                 </a>
                 <div class="top-menu text-center">
@@ -44,43 +41,51 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             <aside>
                 <div id="sidebar"  class="nav-collapse"><!-- ........Caja.Que.Contiene.Todo.El.Menu.Izq........... -->
                     <ul class="sidebar-menu nav">
-                        <li>
+                       <li>
                             <p class="text-center">
                                 <a>
-                                    <img src="../../imagenes/R (2).png" class="img-circle" width="60">
+                                    <img src="../../imagenes/graduado (1).png" class="img-circle" width="60">
                                 </a>
                             </p>
-                            <h5 class="text-center TextWhite">@profesorcarlos</h5>
+                            <h5 class="text-center TextWhite">@estudiante</h5>
                         </li>
-                        <li class="sub-menu">
-                            <a  href="../../profesores/principalprofesores.html" >
+
+
+
+                       <li class="sub-menu">
+                           <a  href="../VentanaPrincipalAlumno.html" >
                                 <i class="fa fa-desktop TextWhite"></i>
                                 <span class="TextWhite">VentanaPrincipal</span>
                             </a>
-                        </li>        
+                        </li>    
+
 
                         <li class="sub-menu">
-                            <a href="../../profesores/ventanasecundariaprofesores/Horario.html" >
+                            <a href="../../alumno/ventanaSecundariaAlumno/Horario.html" >
                                 <i class="fa fa-desktop TextWhite"></i>
                                 <span class="TextWhite">Horario</span>
                             </a>
                         </li>
                         <li class="sub-menu">
-                            <a  href="../../profesores/ventanasecundariaprofesores/Calificaciones.html" >
+                            <a  href="../../alumno/ventanaSecundariaAlumno/Miscalificacion.html" >
                                 <i class="fa fa-desktop TextWhite"></i>
-                                <span class="TextWhite">Calificaicones</span>
+                                <span class="TextWhite">MisCalificaciones</span>
+                            </a>
+                        </li>   
+                        <li class="sub-menu">
+                            <a  href="../../alumno/ventanaSecundariaAlumno/RecursoEducativos.html" >
+                                <i class="fa fa-desktop TextWhite"></i>
+                                <span class="TextWhite">Recurso Educativo</span>
                             </a>
                         </li>            
                         <li class="sub-menu">
-                            <a  href="../../profesores/ventanasecundariaprofesores/RecursoEducativos.html" >
+                            <a  href="../../alumno/ventanaSecundariaAlumno/Pemsun.html" >
                                 <i class="fa fa-desktop TextWhite"></i>
-                                <span class="TextWhite">RecursoEducativos</span>
+                                <span class="TextWhite">pensum</span>
                             </a>
-                        </li>        
-
-
-                        <li class="sub-menu">
-                            <a href="../../index.html" >
+                        </li>  
+                         <li class="sub-menu">
+                             <a href="../../index.html" >
                                 <i class="fa fa-desktop TextWhite"></i>
 
                                 <span class="TextWhite">VOLVER</span>
@@ -93,39 +98,55 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 
             <section id="main-content">
                 <br>
-                <h2>Asignaturas Asignadas</h2>
+                <br>
+                <br>
+                <h2>Pensum - Colegio XYZ</h2>
+
                 <table>
-                    <tr>
-                        <th>Nombre del Curso</th>
-                        <th>Código del Curso</th>
-                        <th>Nivel</th>
-                        <th>Aula</th>
-                        <th>N° de Estudiantes</th>
-                    </tr>
-                    <tr>
-                        <td>Matemáticas I</td>
-                        <td>MAT101</td>
-                        <td>Primero</td>
-                        <td>Aula 101</td>
-                        <td>20</td>
-                    </tr>
-                    <tr>
-                        <td>Lengua y Literatura</td>
-                        <td>LEN201</td>
-                        <td>Segundo</td>
-                        <td>Aula 202</td>
-                        <td>25</td>
-                    </tr>
-                    <tr>
-                        <td>Ciencias Sociales</td>
-                        <td>CSS301</td>
-                        <td>Tercero</td>
-                        <td>Aula 303</td>
-                        <td>30</td>
-                    </tr> 
+                    <thead>
+                        <tr>
+                            <th>Grado</th>
+                            <th>Materias</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Primero</td>
+                            <td>Matemáticas <span class="subject-details">(ID: 001)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Lenguaje y Literatura <span class="subject-details">(ID: 002)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Ciencias Naturales <span class="subject-details">(ID: 003)</span></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Segundo</td>
+                            <td>Historia <span class="subject-details">(ID: 004)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Geografía <span class="subject-details">(ID: 005)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Arte <span class="subject-details">(ID: 006)</span></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Tercero</td>
+                            <td>Idioma Extranjero <span class="subject-details">(ID: 007)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Educación Física <span class="subject-details">(ID: 008)</span></td>
+                        </tr>
+                        <tr>
+                            <td>Computación <span class="subject-details">(ID: 009)</span></td>
+                        </tr>
+
+                    </tbody>
                 </table>
 
                 <section class="wrapper">
+
+
                 </section>
             </section>
         </section>
