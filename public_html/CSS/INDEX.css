@@ -6,6 +6,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 11/03/2024, 11:04:09 PM
     Author     : abel
 */
+body {
+    background-color: #008CBA;
+}
+
 
 .container {
     max-width: 1300px;
@@ -13,6 +17,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
 }
 
 #welcome-section {
@@ -82,7 +87,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 42%; /* Adjusted to make the video slightly smaller */
+    padding-bottom: 42%; 
     overflow: hidden;
 }
 

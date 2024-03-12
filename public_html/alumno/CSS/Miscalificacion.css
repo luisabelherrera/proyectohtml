@@ -7,7 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : abel
 */
 .calificaciones-heading {
-    background-color: #3366cc;
+    background-color: #003366;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
     font-size: 22px;
@@ -53,7 +53,7 @@ td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #003366;
     color: white;
 }
 

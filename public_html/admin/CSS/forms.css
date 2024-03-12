@@ -45,14 +45,16 @@ section.wrapper {
 }
 
 .black-bg {
-    border: 1px solid #610B5E;
-    background-color: #0B1B2E;
+    border: 1px solid #0033cc;
+    background: linear-gradient(to right, #0B1B2E 0%, #800080 100%);
     font-size: 15px;
     color: white !important;
     position: fixed;
     width: 100%;
     z-index: 100000;
 }
+
+
 #main-content {
     margin-left: 210px;
 }
@@ -64,6 +66,7 @@ section.wrapper {
     top: 70px;
 }
 .nav-collapse {
+     border: 1px solid #0033cc;
 	background-color: #0B1B2E;
 	float: left;
 }

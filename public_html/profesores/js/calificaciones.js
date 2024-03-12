@@ -6,7 +6,6 @@ function guardarNotas() {
     var finalNote1 = (period1Note1 + period2Note1 + period3Note1) / 3;
     document.getElementById("finalNote1").value = finalNote1.toFixed(2);
 
-    // Additional logic based on finalNote1, if needed
 
     alert("Notas guardadas correctamente");
 }

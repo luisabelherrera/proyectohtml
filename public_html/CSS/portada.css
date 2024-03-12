@@ -6,11 +6,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 11/03/2024, 11:12:38 PM
     Author     : abel
 */
-header {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-}
 
 nav ul {
     list-style: none;
@@ -20,17 +15,17 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 21px;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #660066; 
+    color: #ffd700; 
 }

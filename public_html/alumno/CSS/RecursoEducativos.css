@@ -14,13 +14,13 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #990066;
     padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #3498db;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -38,7 +38,7 @@ a:hover {
 }
 
 .mostrarDetallesBtn {
-    background-color: #2ecc71;
+    background-color: #000099;
     color: #fff;
     border: none;
     padding: 5px 10px;

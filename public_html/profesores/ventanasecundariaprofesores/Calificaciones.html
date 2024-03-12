@@ -25,6 +25,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <link rel="stylesheet" href="../css/calificaciones.css"/>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-dfMQ5z7XXN8T1Q2cRKAlY5gCXY6uHDURvmyeLo6ezWOxw9j+9W7+q3K78tPq9Jj6" crossorigin="anonymous">
 
 
 
@@ -40,10 +41,18 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                     <b >VENTANA: PROFESOR</b>   
                     <b class="visible-xs TextWhite"></b>
                 </a>
+                
                 <div class="top-menu text-center">
-                    <button onclick="mostrarNotificaciones()">Notificaciones</button>
+                    <button class="notificaciones-btn" onclick="mostrarNotificaciones()">
+                        <img src="../../imagenes/activo.png" alt="Notificaciones"> 
+                    </button>
+
                     <div id="notificacionesPopup">
-                        <span id="cerrarNotificaciones" onclick="cerrarNotificaciones()">x</span>
+                         <button class="cerrarNotificaciones" onclick="cerrarNotificaciones()">
+                        <img src="../../imagenes/boton-x.png" alt="Notificaciones"> 
+                    </button>
+                        
+                        
                         <h2>Notificaciones de Estudiantes</h2>
                         <table>
                             <thead>
@@ -54,7 +63,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
                                 </tr>
                             </thead>
                             <tbody>
-                              
+
                                 <tr>
                                     <td>001</td>
                                     <td>123456789</td>

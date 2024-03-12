@@ -1,22 +1,6 @@
-#notificacionesPopup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #fff;
-    color: #000; 
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    max-width: 400px;
-    max-height: 300px;
-    overflow-y: auto;
-}
 
 #notificacionesPopup h2 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #notificacionesPopup table {
@@ -25,37 +9,66 @@
     margin-top: 10px;
 }
 
-#notificacionesPopup table, th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
+#notificacionesPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 600px;
+    width: 100%;
+    max-height: 600px;
+    overflow-y: auto;
+}
+#cerrarNotificaciones {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
-#notificacionesPopup th {
-    background-color: #4CAF50;
-    color: white;
-}
+
 
 #notificacionesPopup tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
 }
 
 #notificacionesPopup tr:nth-child(odd) {
-    background-color: #fff;
+    background-color: #e8e8e8;
 }
 
-#cerrarNotificaciones {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.notificaciones-btn {
+    padding: 10px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: -20px;
 }
+
+.notificaciones-btn:active {
+    background-color: #2980b9;
+}
+
+
 
 .container {
     font-family: Arial, sans-serif;
     margin: 0 auto;
     padding: 10px;
-    max-width: 1100px; 
+    max-width: 1100px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -77,7 +90,7 @@ input[type="text"], input[type="number"] {
 
 input[type="button"] {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #990099;
     color: white;
     border: none;
     cursor: pointer;
