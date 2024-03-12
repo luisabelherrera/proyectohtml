@@ -105,8 +105,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 
                     <label for="tipoRecurso">Tipo de Recurso:</label>
                     <input type="text" id="tipoRecurso" required>
-
+                    <br>
                     <label for="descripcionRecurso">Descripción:</label>
+
                     <textarea id="descripcionRecurso" required></textarea>
 
                     <label for="enlaceRecurso">Enlace al PDF/Video:</label>
@@ -132,6 +133,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
 
                     </tbody>
                 </table>
+                <form id="editableForm" style="display: none;">
+                    <label for="editNombre">Nombre:</label>
+                    <input type="text" id="editNombre">
+
+                    <label for="editTipo">Tipo:</label>
+                    <input type="text" id="editTipo">
+
+                    <label for="editDescripcion">Descripción:</label>
+                    <input type="text" id="editDescripcion">
+
+                    <label for="editArchivo">Archivo:</label>
+                    <input type="file" id="editArchivo">
+
+                     <button type="button" onclick="guardarModificacion()">Guardar Modificación</button>
+                </form>
 
                 <section class="wrapper">
 

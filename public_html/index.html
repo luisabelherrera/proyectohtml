@@ -11,70 +11,85 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/barra.js"></script>
-
+        <link rel="stylesheet" href="CSS/INDEX.css"/>
         <link rel="stylesheet" href="js/main.js"/>
         <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
         <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
         <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
         <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
         <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
-
+        <link rel="stylesheet" href="CSS/portada.css"/>
     </head>
 
 
 
     <body>
-
         <header>
             <nav>
                 <ul>
-
                     <li>
-                        <a href="inicio/Inicio.html"  class="a-spacing">LOGIN</a>
-                        <a href="inicio/registro/Registro.html">REGISTRO</a>
                     </li>
+                    <li>
+                        <a href="inicio/Inicio.html" class="a-spacing">LOGIN</a>
 
+                        <a href="inicio/registro/Registro.html" >REGISTRO</a>
+                    </li>
                 </ul>
-
             </nav>
         </header>
         <main>
+            <br>
+            <br>
+            <br>
             <div id="main" class="container">
-                <br><!-- comment -->
-                 <br>
-                <br>
-                <h1>Escuela ""</h1>
 
 
-                <div class="content-block">
-                    <h2>Video: Un Paseo por Nuestras Instalaciones</h2>
+                <section id="welcome-section">
+                    <br>
+                    <br>
+                    <br>
+                    <img src="imagenes/logo_trial.png" alt="School Logo" class="logo">
+                    <h1>Bienvenidos a la Escuela Educativa</h1>
+                    <p>Explora nuestro entorno educativo de alta calidad donde el aprendizaje cobra vida.</p>
+                </section>
+
+
+                <section id="video-section">
+                    <h2>Descubre Nuestras Instalaciones</h2>
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/gkpkW5Y_aiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                </div>
+                    <p>Embárcate en un recorrido virtual por nuestra escuela y sumérgete en el ambiente de aprendizaje inspirador.</p>
+                </section>
 
-                <div class="content-block">
-                    <div id="image-container"></div>
-                </div>
+
+                <section id="image-gallery-section">
+                    <h2> Galería de Imágenes</h2>
+                    <div class="image-gallery">
+                        <img src="imagenes/215115469-interior-de-un-aula-escolar-con-escritorios-y-sillas-renderizado-3d.jpg" alt="Aula" class="gallery-image">
+                        <img src="imagenes/Biblioteca_Barzio.jpg" alt="Biblioteca" class="gallery-image">
+                        <img src="imagenes/DJI_0002-11.jpg" alt="Campo Deportivo" class="gallery-image">
+                    </div>
+                    <p>Sumérgete en la diversidad de nuestras instalaciones, desde aulas modernas hasta una biblioteca acogedora y un campo deportivo vibrante.</p>
+                </section>
             </div>
-            <script src="script.js"></script>
         </main>
 
 
+
         <div class="video-container">
-            <div class="text"> 
-                <p>Nos localizamos .</p>
+            <div class="text">
+                <p>Nos localizamos.</p>
             </div>
             <div class="wrapper">
                 <div class="whitespace"></div>
                 <section id="mapa" class="mapa">
-                    <div style="width: 100%; height:50vh; float: left;" id="mapContainer"></div>
+                    <div id="mapContainer"></div>
 
                     <div class="map-text">
-                        <h2 style="color: #000000;">UBICACION</h2>
-                        <p style="color: #000000;">ESTAMOS UBICADOS EN CARTAGENA DE INDIA/ COLOMBIA.</p>
+                        <h2>UBICACION</h2>
+                        <p>ESTAMOS UBICADOS EN CARTAGENA DE INDIA/ COLOMBIA.</p>
                     </div>
-
 
                     <div class="content-above-map">
 
@@ -82,7 +97,6 @@
                 </section>
             </div>
         </div>
-
 
 
         <footer>

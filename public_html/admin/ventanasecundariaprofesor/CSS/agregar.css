@@ -7,39 +7,39 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Author     : abel
 */
 
-
 h1 {
     text-align: center;
+    color: #333;
 }
 
 form {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: black; 
+    box-sizing: border-box;
+}
+
+.campo {
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    color: black; 
 }
 
 input {
     width: 100%;
     padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
     box-sizing: border-box;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #45a049;
+.botones {
+    display: flex;
+    justify-content: space-between;
 }

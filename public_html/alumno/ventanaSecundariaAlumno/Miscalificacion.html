@@ -42,131 +42,112 @@
             <div id="sidebar" class="nav-collapse">
                 <ul class="sidebar-menu nav">
                     <li>
-                            <p class="text-center">
-                                <a>
-                                    <img src="../../imagenes/graduado (1).png" class="img-circle" width="60">
-                                </a>
-                            </p>
-                            <h5 class="text-center TextWhite">@estudiante</h5>
-                        </li>
+                        <p class="text-center">
+                            <a>
+                                <img src="../../imagenes/graduado (1).png" class="img-circle" width="60">
+                            </a>
+                        </p>
+                        <h5 class="text-center TextWhite">@estudiante</h5>
+                    </li>
 
 
 
-                       <li class="sub-menu">
-                           <a  href="../VentanaPrincipalAlumno.html" >
-                                <i class="fa fa-desktop TextWhite"></i>
-                                <span class="TextWhite">VentanaPrincipal</span>
-                            </a>
-                        </li>    
+                    <li class="sub-menu">
+                        <a  href="../VentanaPrincipalAlumno.html" >
+                            <i class="fa fa-desktop TextWhite"></i>
+                            <span class="TextWhite">VentanaPrincipal</span>
+                        </a>
+                    </li>    
 
 
-                        <li class="sub-menu">
-                            <a href="../../alumno/ventanaSecundariaAlumno/Horario.html" >
-                                <i class="fa fa-desktop TextWhite"></i>
-                                <span class="TextWhite">Horario</span>
-                            </a>
-                        </li>
-                        <li class="sub-menu">
-                            <a  href="../../alumno/ventanaSecundariaAlumno/Miscalificacion.html" >
-                                <i class="fa fa-desktop TextWhite"></i>
-                                <span class="TextWhite">MisCalificaciones</span>
-                            </a>
-                        </li>   
-                        <li class="sub-menu">
-                            <a  href="../../alumno/ventanaSecundariaAlumno/RecursoEducativos.html" >
-                                <i class="fa fa-desktop TextWhite"></i>
-                                <span class="TextWhite">Recurso Educativo</span>
-                            </a>
-                        </li>            
-                        <li class="sub-menu">
-                            <a  href="../../alumno/ventanaSecundariaAlumno/Pemsun.html" >
-                                <i class="fa fa-desktop TextWhite"></i>
-                                <span class="TextWhite">pensum</span>
-                            </a>
-                        </li>  
-                         <li class="sub-menu">
-                             <a href="../../index.html" >
-                                <i class="fa fa-desktop TextWhite"></i>
+                    <li class="sub-menu">
+                        <a href="../../alumno/ventanaSecundariaAlumno/Horario.html" >
+                            <i class="fa fa-desktop TextWhite"></i>
+                            <span class="TextWhite">Horario</span>
+                        </a>
+                    </li>
+                    <li class="sub-menu">
+                        <a  href="../../alumno/ventanaSecundariaAlumno/Miscalificacion.html" >
+                            <i class="fa fa-desktop TextWhite"></i>
+                            <span class="TextWhite">MisCalificaciones</span>
+                        </a>
+                    </li>   
+                    <li class="sub-menu">
+                        <a  href="../../alumno/ventanaSecundariaAlumno/RecursoEducativos.html" >
+                            <i class="fa fa-desktop TextWhite"></i>
+                            <span class="TextWhite">Recurso Educativo</span>
+                        </a>
+                    </li>            
+                    <li class="sub-menu">
+                        <a  href="../../alumno/ventanaSecundariaAlumno/Pemsun.html" >
+                            <i class="fa fa-desktop TextWhite"></i>
+                            <span class="TextWhite">pensum</span>
+                        </a>
+                    </li>  
+                    <li class="sub-menu">
+                        <a href="../../index.html" >
+                            <i class="fa fa-desktop TextWhite"></i>
 
-                                <span class="TextWhite">VOLVER</span>
-                            </a>
-                        </li>
+                            <span class="TextWhite">VOLVER</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </aside>
 
 
         <section id="container">
-            <!-- Contenido anterior ... -->
+
             <section id="main-content">
-                <br><!-- comment -->
                 <br>
                 <br>
-                <h2>Mis Calificaciones - Colegio XYZ</h2>
+                <br>
+                <h2 class="calificaciones-heading">
+                    Mis Calificaciones - Estudiante ID: 001 - Nombre: Luis Abel Herrera - Grado: Noveno
+                </h2>
 
-                <table>
-                    <tr>
-                        <td>Grado</td>
-                        <td>Max. Materias por Grado</td>
-                        <td>Materias Inscritas</td>
-                    </tr>
-                    <tr>
-                        <td>Noveno</td>
-                        <td>8</td>
-                        <td>6</td>
-                    </tr>
-                </table>
-
-                <table>
+                <table id="notesTable">
                     <thead>
                         <tr>
-                            <th>Materia</th>
-                            <th>Descripción</th>
-                            <th>Unidades</th>
-                            <th>Calificación</th>
-                            <th>Calif</th>
+                            <th>Asignatura</th>
+                            <th>Observación</th>
+                            <th data-period="1">Calificación Período 1</th>
+                            <th data-period="2">Calificación Período 2</th>
+                            <th data-period="3">Calificación Período 3</th>
+                            <th data-final="true">Calificación Final</th>
                             <th>Profesor</th>
-                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Matemáticas</td>
-                            <td>Álgebra y Geometría</td>
-                            <td>5</td>
-                            <td>90</td>
-                            <td>4.5</td>
+                            <td data-field="observacionMatematicas">Buena participación en clase</td>
+                            <td data-field="calificacionPeriodo1Matematicas">4.0</td>
+                            <td data-field="calificacionPeriodo2Matematicas">4.5</td>
+                            <td data-field="calificacionPeriodo3Matematicas">4.3</td>
+                            <td data-field="calificacionFinalMatematicas" data-final="true">4.27</td>
                             <td>Prof. García</td>
-                            <td class="professor-info">
-                                <h3>Información del Profesor</h3>
-                                <p>Nombre: Prof. García</p>
-                                <p>Email: profesor.garcia@colegioxyz.com</p>
-                                <textarea id="mensajeProfesor" placeholder="Redacta tu mensaje al profesor"></textarea>
-                                <button class="message-btn" onclick="enviarMensaje('profesor.garcia@colegioxyz.com')">Enviar Mensaje</button>
-                            </td>
                         </tr>
                         <tr>
                             <td>Lengua y Literatura</td>
-                            <td>Comprensión de Lectura</td>
-                            <td>4</td>
-                            <td>85</td>
-                            <td>4.0</td>
+                            <td data-field="observacionLiteratura">Mejorar en la expresión escrita</td>
+                            <td data-field="calificacionPeriodo1Literatura">3.6</td>
+                            <td data-field="calificacionPeriodo2Literatura">4.2</td>
+                            <td data-field="calificacionPeriodo3Literatura">4.0</td>
+                            <td data-field="calificacionFinalLiteratura" data-final="true">4.0</td>
                             <td>Prof. Martínez</td>
-                            <td class="professor-info">
-                                <h3>Información del Profesor</h3>
-                                <p>Nombre: Prof. Martínez</p>
-                                <p>Email: profesor.martinez@colegioxyz.com</p>
-                                <textarea id="mensajeProfesor" placeholder="Redacta tu mensaje al profesor"></textarea>
-                                <button class="message-btn" onclick="enviarMensaje('profesor.martinez@colegioxyz.com')">Enviar Mensaje</button>
-                            </td>
                         </tr>
+                    </tbody>
 
                 </table>
+
+
+
 
                 <p></p>
                 <button id="btnImprimir" onclick="imprimirPagina()">Imprimir PDF</button>
 
-                
+
             </section>
         </section>
     </body>

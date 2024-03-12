@@ -6,7 +6,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
     Created on : 10/03/2024, 8:49:12 p. m.
     Author     : abel
 */
+.calificaciones-heading {
+    background-color: #3366cc;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
 
+}
 #btnImprimir {
     background-color: #d9534f;
     color: white;

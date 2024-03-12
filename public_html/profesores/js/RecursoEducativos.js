@@ -41,6 +41,8 @@ function agregarRecurso() {
     archivoInput.value = '';
 }
 
+
+
 function borrarRecurso(idRecurso) {
     const fila = document.getElementById(`recurso_${idRecurso}`);
     if (fila) {
@@ -48,10 +50,45 @@ function borrarRecurso(idRecurso) {
     }
 }
 
-function modificarRecurso(idRecurso) {
+ function modificarRecurso(idRecurso) {
+    const fila = document.getElementById(`recurso_${idRecurso}`);
+    if (fila) {
+        const nombre = fila.children[1].textContent;
+        const tipo = fila.children[2].textContent;
+        const descripcion = fila.children[3].textContent;
 
-    alert(`Función de modificación para recurso ${idRecurso}`);
+        document.getElementById('editNombre').value = nombre;
+        document.getElementById('editTipo').value = tipo;
+        document.getElementById('editDescripcion').value = descripcion;
+
+        document.getElementById('editableForm').style.display = 'block';
+        fila.style.display = 'none';
+
+        document.getElementById('editableForm').setAttribute('data-idRecurso', idRecurso);
+    }
 }
+
+    function guardarModificacion() {
+        const idRecurso = document.getElementById('editableForm').getAttribute('data-idRecurso');
+        const fila = document.getElementById(`recurso_${idRecurso}`);
+        if (fila) {
+            // Get the modified data from the form
+            const nombre = document.getElementById('editNombre').value;
+            const tipo = document.getElementById('editTipo').value;
+            const descripcion = document.getElementById('editDescripcion').value;
+
+            // Update the row with the modified data
+            fila.children[1].textContent = nombre;
+            fila.children[2].textContent = tipo;
+            fila.children[3].textContent = descripcion;
+
+            // Hide the editable form and show the updated row
+            document.getElementById('editableForm').style.display = 'none';
+            fila.style.display = 'table-row';
+        }
+    }
+
+  
 
 function mostrarDetalles(idRecurso) {
 
