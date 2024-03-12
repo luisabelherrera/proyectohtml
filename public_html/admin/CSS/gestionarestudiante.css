@@ -12,16 +12,12 @@
     border-radius: 15px;
     box-shadow: 0 9px #999;
 }
-.abc {
-    color: green;
-    margin-bottom: 10px;
- 
-}
+.abc,
 .abe {
-    color: #ff0000;
-    margin-bottom: 10px;
- 
+    color: #00ffff;
+    margin-bottom: 20px;
 }
+
 
 .button:hover {background-color: #3e8e41}
 

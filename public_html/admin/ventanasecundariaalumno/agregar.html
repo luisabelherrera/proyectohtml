@@ -12,9 +12,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../admin/CSS/usuariollamardatos.css" />
         <script src="js/barra.js"></script>
-        <link rel="stylesheet" type="text/css" href="CSS/modificar.css" />
+        <link rel="stylesheet" type="text/css" href="CSS/agregar.css" />
         <script src="JS/agregar.js"></script>
-        <script src="JS/modificar.js"></script>
         <link rel="stylesheet" href="../CSS/bootstrap.css">
         <link rel="stylesheet" href="../CSS/forms.css">
         <script src="js/filtrado.js"></script> 
@@ -58,6 +57,7 @@
                             </a>
                             <ul>
 
+                                <li><a href="agregar.html">PROFESORES</a></li>
                                 <li><a href="AdministradorRoles.html">ADMINISTRATIVO ROLES</a></li>
                             </ul>
                         </li>
@@ -131,55 +131,58 @@
                     <br>
                     <br>
 
-                    <h1>Modificar Alumno</h1>
 
-                    <form id="formularioModificarAlumno">
+                    <h1>Agregar Alumno</h1>
+
+                    <form id="formularioAgregarAlumno">
                         <div class="campo">
-                            <label for="idAlumnoModificar">ID Alumno:</label>
-                            <input type="text" id="idAlumnoModificar" required>
+                            <label for="idAlumno">ID Alumno:</label>
+                            <input type="text" id="idAlumno" required>
                         </div>
 
                         <div class="campo">
-                            <label for="nuevoNombre">Nuevo Nombre:</label>
-                            <input type="text" id="nuevoNombre" required>
+                            <label for="nombreAlumno">Nombre:</label>
+                            <input type="text" id="nombreAlumno" required>
                         </div>
 
                         <div class="campo">
-                            <label for="nuevoApellido">Nuevo Apellido:</label>
-                            <input type="text" id="nuevoApellido" required>
+                            <label for="apellidoAlumno">Apellido:</label>
+                            <input type="text" id="apellidoAlumno" required>
                         </div>
 
                         <div class="campo">
-                            <label for="nuevoGrado">Nuevo Grado:</label>
-                            <input type="text" id="nuevoGrado" required>
+                            <label for="gradoAlumno">Grado:</label>
+                            <input type="text" id="gradoAlumno" required>
                         </div>
 
                         <div class="campo">
-                            <label for="nuevaSeccion">Nueva Sección:</label>
-                            <input type="text" id="nuevaSeccion" required>
+                            <label for="seccionAlumno">Sección:</label>
+                            <input type="text" id="seccionAlumno" required>
                         </div>
 
                         <div class="campo">
-                            <label for="nuevaFechaInscripcion">Nueva Fecha de inscripción:</label>
-                            <input type="date" id="nuevaFechaInscripcion" required>
+                            <label for="fechaInscripcion">Fecha de inscripción:</label>
+                            <input type="date" id="fechaInscripcion" required>
                         </div>
 
                         <div class="campo">
-                            <label for="nuevaMateria">Nueva Materia:</label>
-                            <input type="text" id="nuevaMateria" required>
+                            <label for="materiaAlumno">Materia:</label>
+                            <input type="text" id="materiaAlumno" required>
                         </div>
 
                         <div class="campo">
-                            <label for="nuevoNivel">Nuevo Nivel:</label>
-                            <input type="text" id="nuevoNivel" required>
+                            <label for="nivelAlumno">Nivel:</label>
+                            <input type="text" id="nivelAlumno" required>
                         </div>
-
 
                         <div class="botones">
-                            <button type="button" onclick="modificarAlumno()">Modificar Alumno</button>
-                            <button type="button" onclick="mostrarDetallesModificados()">Mostrar Detalles Modificados</button>
+                            <button type="button" onclick="agregarAlumno()">Agregar Alumno</button>
+                            <button type="button" onclick="mostrarDetallesNuevoAlumno()">Mostrar Detalles</button>
                         </div>
                     </form>
+
+
+
 
 
                     <section class="wrapper">
