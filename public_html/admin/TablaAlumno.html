@@ -53,14 +53,39 @@
                                 <span class="TextWhite">PANEL PRINCIPAL</span>
                             </a>
                             <ul>
-                                <li><a href="TablaAlumno.html">Alumno</a></li>
+
                                 <li><a href="TablaProfesor.html">PROFESORES</a></li>
                                 <li><a href="AdministradorRoles.html">ADMINISTRATIVO ROLES</a></li>
                             </ul>
                         </li>
 
 
+                        <li class="sub-menu">
+                            <a href="ventanaprincipalAdmin.html">
+                                <i class="fa fa-dashboard TextWhite"></i>
+                                <span class="TextWhite">ALUMNO</span>
+                            </a>
+                            <ul>
+                                <li><a href="../admin/TablaAlumno.html"  class="abc">Registrar Nuevo Alumno</a> <br></li>
+                                <li><a href="../admin/TablaAlumno.html" class="abc">Modificar Alumno</a></li>
+                                <li><a href="../admin/TablaAlumno.html" class="abc">Listado Alumnos</a></li>
+                                <li><a href="../admin/TablaAlumno.html" class="abc">Eliminar Alumnos</a></li>
 
+                            </ul>
+                        </li>
+                        <li class="sub-menu">
+                            <a href="ventanaprincipalAdmin.html">
+                                <i class="fa fa-dashboard TextWhite"></i>
+                                <span class="TextWhite">Profesor</span>
+                            </a>
+                            <ul>
+                                <li><a href="../admin/TablaProfesor.html"  class="abe">Registrar Nuevo Profesor</a> <br></li>
+                                <li><a href="../admin/TablaAlumno.html" class="abe">Modificar Profesor</a></li>
+                                <li><a href="../admin/TablaProfesor.html" class="abe">Listado Profesor</a></li>
+                                <li><a href="../admin/TablaAlumno.html" class="abe">Eliminar Profesor</a></li>
+
+                            </ul>
+                        </li>
 
                         <li class="sub-menu">
                             <a href="TablaMatricula.html" >
@@ -104,96 +129,96 @@
                     <br>
                     <br>
                     <br>
-                 
-                        <span class="text1">GESTIONAR ALUMNOS</span>
-                        <span class="text2"></span>
-                        <br>
-                        <div id="cuadroDetalles" class="detalle-container">
-                            <div id="detallesTexto" class="detalle-info"></div>
-                        </div>
 
-                        <label for="filtroInput">Buscar por:</label>
-                        <select id="filtroSelect">
-                            <option value="clave">Clave</option>
-                        </select>
-                        <input type="text" id="filtroInput" onkeyup="filtrarTabla()" />
-                        <br>
-                        <br>
-                        <table id="tablaAlumnos" class="table table-bordered border-primary">
-                            <thead>
-                                <tr class="table-dark">
-                                    <th>ID Alumno</th>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>Grado</th>
-                                    <th>Sección</th>
-                                    <th>Fecha de inscripción</th>
-                                    <th>Materia</th>
-                                    <th>Nivel</th>
-                                    <th>Otros Atributos...</th>
-                                    <th>Mostrar Detalles</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                         
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Luis</td>
-                                    <td>Herrera</td>
-                                    <td>10</td>
-                                    <td>A</td>
-                                    <td>2024-01-01</td>
-                                    <td>Matemáticas</td>
-                                    <td>1</td>
-                                    <td>Otros atributos...</td>
-                                    <td>
-                                        <button class="mostrarDetallesBtn" data-id-alumno="#1" data-nombre="Luis" data-apellido="Herrera" data-grado="10" data-seccion="A" data-fecha="2024-01-01" data-materia="Matemáticas" data-nivel="1">Mostrar Detalles</button>
-                                        <div id="detalle_alumno_1" style="display: none;"> 
-                                            <p>Otros detalles...</p>
-                                        </div>
-                                    </td>
-                                </tr>
-                             
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Carlos</td>
-                                    <td>Díaz</td>
-                                    <td>11</td>
-                                    <td>B</td>
-                                    <td>2024-01-02</td>
-                                    <td>Historia</td>
-                                    <td>2</td>
-                                    <td>Otros atributos...</td>
-                                    <td>
-                                        <button class="mostrarDetallesBtn" data-id-alumno="#2" data-nombre="Carlos" data-apellido="Díaz" data-grado="11" data-seccion="B" data-fecha="2024-01-02" data-materia="Historia" data-nivel="2">Mostrar Detalles</button>
-                                        <div id="detalle_alumno_2" style="display: none;"> 
-                                            <p>Otros detalles...</p>
-                                        </div>
-                                    </td>
-                                </tr>
-                              
-                            </tbody>
-                        </table>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <input type="button" id="boton" value="Registrar Alumno" onclick="location.href = '../admin/Ventanasecundariaadmin/TablaAlumno.html';">
-                        <input type="button" id="boton1" value="Borrar Alumno" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-                        <input type="button" id="boton2" value="Modificar Alumno" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-                        <input type="button" id="boton4" value="Descargar Excel" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
-                        <a href="admin/ventanasecundariaalumno/modificar.html"></a>
-                        <footer>
-                            <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entregable 
-                                integrantes Luis Abel Herrera Arrieta, Carlos José Díaz Castro, Jhon Jairo Gambín Salas, Yelserp Barrios Gómez</p>
-                        </footer>
+                    <span class="text1">GESTIONAR ALUMNOS</span>
+                    <span class="text2"></span>
+                    <br>
+                    <div id="cuadroDetalles" class="detalle-container">
+                        <div id="detallesTexto" class="detalle-info"></div>
                     </div>
 
+                    <label for="filtroInput">Buscar por:</label>
+                    <select id="filtroSelect">
+                        <option value="clave">Clave</option>
+                    </select>
+                    <input type="text" id="filtroInput" onkeyup="filtrarTabla()" />
+                    <br>
+                    <br>
+                    <table id="tablaAlumnos" class="table table-bordered border-primary">
+                        <thead>
+                            <tr class="table-dark">
+                                <th>ID Alumno</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Grado</th>
+                                <th>Sección</th>
+                                <th>Fecha de inscripción</th>
+                                <th>Materia</th>
+                                <th>Nivel</th>
+                                <th>Otros Atributos...</th>
+                                <th>Mostrar Detalles</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                    <section class="wrapper">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Luis</td>
+                                <td>Herrera</td>
+                                <td>10</td>
+                                <td>A</td>
+                                <td>2024-01-01</td>
+                                <td>Matemáticas</td>
+                                <td>1</td>
+                                <td>Otros atributos...</td>
+                                <td>
+                                    <button class="mostrarDetallesBtn" data-id-alumno="#1" data-nombre="Luis" data-apellido="Herrera" data-grado="10" data-seccion="A" data-fecha="2024-01-01" data-materia="Matemáticas" data-nivel="1">Mostrar Detalles</button>
+                                    <div id="detalle_alumno_1" style="display: none;"> 
+                                        <p>Otros detalles...</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Carlos</td>
+                                <td>Díaz</td>
+                                <td>11</td>
+                                <td>B</td>
+                                <td>2024-01-02</td>
+                                <td>Historia</td>
+                                <td>2</td>
+                                <td>Otros atributos...</td>
+                                <td>
+                                    <button class="mostrarDetallesBtn" data-id-alumno="#2" data-nombre="Carlos" data-apellido="Díaz" data-grado="11" data-seccion="B" data-fecha="2024-01-02" data-materia="Historia" data-nivel="2">Mostrar Detalles</button>
+                                    <div id="detalle_alumno_2" style="display: none;"> 
+                                        <p>Otros detalles...</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="button" id="boton" value="Registrar Alumno" onclick="location.href = '../admin/Ventanasecundariaadmin/TablaAlumno.html';">
+                    <input type="button" id="boton1" value="Borrar Alumno" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton2" value="Modificar Alumno" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <input type="button" id="boton4" value="Descargar Excel" onclick="location.href = '../admin/VentanaPrincipalProfesor.html';">
+                    <a href="admin/ventanasecundariaalumno/modificar.html"></a>
+                    <footer>
+                        <p>2024, este proyecto fue hecho por estudiantes del 4 semestre de desarrollo de software como primer entregable 
+                            integrantes Luis Abel Herrera Arrieta, Carlos José Díaz Castro, Jhon Jairo Gambín Salas, Yelserp Barrios Gómez</p>
+                    </footer>
+                </div>
 
 
-                    </section>
+                <section class="wrapper">
+
+
+                </section>
             </section>
         </section>
 
