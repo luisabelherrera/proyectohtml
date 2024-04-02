@@ -1,0 +1,118 @@
+section#container {
+	width: 100%;
+}
+section.wrapper {
+	width: 100%;
+}
+.container {
+	width: 100% !important;
+}
+
+.Morado2 {
+	background-color: #6A0888;
+
+}
+.black-bg {
+	height: 70px;
+	background-color: #0B1B2E;
+	font-size: 15px;
+	color: white !important;
+}
+.sidebar-toggle-box {
+	float: left;
+	margin: 20px 10px;
+	font-size: 20px;
+}
+.logo {
+	margin: 20px 10px;
+	font-size: 20px;
+	float: left;
+}
+.hidden-xs {
+	
+}
+.visible-xs {
+	
+}
+.top-menu {
+	float: right;
+	margin: 6px 15px;
+}
+.logout {
+	color: white;
+	border-radius: 7px;
+	width: 100%;
+}
+
+.black-bg {
+    border: 1px solid #0033cc;
+    background: linear-gradient(to right, #0B1B2E 0%, #800080 100%);
+    font-size: 15px;
+    color: white !important;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+}
+
+
+#main-content {
+    margin-left: 210px;
+}
+#sidebar {
+    width: 210px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 70px;
+}
+.nav-collapse {
+     border: 1px solid #0033cc;
+	background-color: #0B1B2E;
+	float: left;
+}
+li.sub-menu {
+	list-style: none;
+}
+.active {
+	background-color: #6A0888;
+	color: white;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #946882 !important;
+  color: white !important;
+ }
+ a {
+ 	text-decoration: none !important;
+ 	color: white;
+ }
+.sidebar-menu {
+	margin: 0px;
+	padding: 10px;
+}
+.TextWhite {
+	color: white;
+}
+
+.mt {
+	width: 100%;
+	margin: 0px;
+}
+.wrapper {
+	background-color: #E6E6E6;
+	padding: 10px 0px;
+	margin: auto;
+}
+.TextGray {
+	color: #6E6E6E;
+}
+.form-panel{
+	background-color: white;
+	width: 100%;
+	margin-top: 15px;
+	padding: 1%;
+	-webkit-box-shadow: 1px 22px 19px -17px rgba(181,172,173,0.91);
+	-moz-box-shadow: 1px 22px 19px -17px rgba(181,172,173,0.91);
+	box-shadow: 1px 22px 19px -17px rgba(181,172,173,0.91);
+}

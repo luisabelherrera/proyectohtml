@@ -1,0 +1,147 @@
+.detalle-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 9999;
+    max-width: 400px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.detalle-info h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.detalle-info p {
+    margin: 5px 0;
+}
+
+.detalle-info p strong {
+    font-weight: bold;
+}
+
+.detalle-container button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.detalle-container button:hover {
+    background-color: #0056b3;
+}
+.container-border {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.table {
+    max-width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: black; 
+    box-sizing: border-box;
+}
+.btn-custom {
+    font-size: 5px;
+    padding: 10px 20px 10px 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000000;
+    transition: all 0.3s ease;
+    margin: 10px;
+    height: 40px;
+    line-height: 1;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-image: url('../imagen/volver.png');
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    max-width: 50px;
+}
+
+.btn-custom:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mostrarDetallesBtn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mostrarDetallesBtn:hover {
+    background-color: #0056b3;
+}
+
+
+.text1 {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: #fff;
+    position: relative;
+    animation: text 3s 1;
+    text-align: center;
+}
+
+.text2 {
+    font-size: 15px;
+    color: #000000;
+    font-family: Georgia, serif;
+    text-align: center; 
+}
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
