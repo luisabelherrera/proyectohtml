@@ -1,0 +1,114 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 10/03/2024, 8:49:12 p. m.
+    Author     : abel
+*/
+.calificaciones-heading {
+    background-color: #003366;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 1px;
+
+}
+#btnImprimir {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#btnImprimir:hover {
+    background-color: #555;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #333;
+}
+
+.professor-info {
+    margin-top: 20px;
+}
+
+.professor-info h3 {
+    color: #555;
+}
+
+.message-btn {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-btn:hover {
+    background-color: #005684;
+}
+
+#mensajeProfesor {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+}
+@media print {
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+        margin: 0;
+        padding: 20px;
+    }
+
+    table {
+        margin: auto;
+    }
+    @media print {
+        .no-print {
+            display: none;
+        }
+    }
+
+    h2, p, #btnImprimir, #sidebar, .professor-info textarea, .exclude-print, .header {
+        display: none;
+    }
+}

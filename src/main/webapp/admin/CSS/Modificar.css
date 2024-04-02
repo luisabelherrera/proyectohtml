@@ -1,0 +1,68 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 10/03/2024, 8:53:13 p. m.
+    Author     : abel
+*/
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    background-color: #333;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+#Barradenavegación {
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#boton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#boton:hover {
+    background-color: #45a049;
+}
